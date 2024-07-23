@@ -1,0 +1,12 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="SSBasedInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <searchConfiguration name="Console.Log" suppressId="clutter-log" problemDescriptor="This should be removed" text="console.log($argument$)" recursive="true" caseInsensitive="true" type="JavaScript">
+        <constraint name="__context__" within="" contains="" />
+        <constraint name="argument" minCount="0" maxCount="2147483647" within="" contains="" />
+      </searchConfiguration>
+    </inspection_tool>
+    <inspection_tool class="com.haulmont.rcb.ExhaustiveDepsInspection" enabled="false" level="WARNING" enabled_by_default="false" />
+  </profile>
+</component>
