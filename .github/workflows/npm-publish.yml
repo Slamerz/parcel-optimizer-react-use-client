@@ -16,9 +16,6 @@ jobs:
         with:
           node-version: '20'  # Specify your Node.js version
           registry-url: 'https://registry.npmjs.org/'
-      - name: Configure npm
-        run: |
-          echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" > .npmrc
       - name: Enable Corepack
         run: corepack enable
 
@@ -27,6 +24,10 @@ jobs:
 
       - name: Build
         run: yarn build  # Or npm run build
+
+      - name: Configure npm Auth Token
+        run: |
+          yarn config set npmAuthToken ${{ secrets.NPM_TOKEN }}
 
       - name: Publish to npm
         run: yarn npm publish --access public  # Or npm publish --access public
