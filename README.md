@@ -33,3 +33,8 @@ Parcel will automatically use the plugin when bundling your project. You don't n
 ## The Issue
 * When using Parcel to bundle a React component library, the 'use client' directive in components isn't set to the 1st line of the file which is required.
 * This is a common issues for people trying to use Parcel to bundle React components that are compatible with server components/[Next.js](https://nextjs.org/) components.
+Saw a few people were having this [issue](https://github.com/parcel-bundler/parcel/issues/9050) and thought I'd share my workaround.
+
+
+## Support
+If you find this plugin useful, feel free to [donate on Ko-fi](https://ko-fi.com/slamerz) ☕️
