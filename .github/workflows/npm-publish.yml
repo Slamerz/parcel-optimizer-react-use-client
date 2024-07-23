@@ -16,7 +16,9 @@ jobs:
         with:
           node-version: '20'  # Specify your Node.js version
           registry-url: 'https://registry.npmjs.org/'
-      
+      - name: Configure npm
+        run: |
+          echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" > .npmrc
       - name: Enable Corepack
         run: corepack enable
 
