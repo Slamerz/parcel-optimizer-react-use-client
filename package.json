@@ -2,8 +2,26 @@
   "name": "parcel-optimizer-react-use-client",
   "version": "0.0.1",
   "description": "Parcel optimizer plugin to allow use client directives in React Components",
-  "main": "index.js",
+  "main": "dist/main.js",
+  "source": "src/index.ts",
+  "types": "dist/index.d.ts",
   "repository": "https://github.com/Slamerz/parcel-optimizer-react-use-client.git",
   "author": "Jacob Walker <jacobdawalker@gmail.com>",
-  "license": "GPL-3.0-or-later"
+  "license": "GPL-3.0-or-later",
+  "packageManager": "yarn@4.3.1",
+  "scripts": {
+    "build": "parcel build"
+  },
+  "devDependencies": {
+    "@parcel/packager-ts": "2.12.0",
+    "@parcel/transformer-typescript-types": "2.12.0",
+    "parcel": "^2.12.0",
+    "typescript": "^5.5.4"
+  },
+  "dependencies": {
+    "@parcel/core": "^2.12.0",
+    "@parcel/plugin": "^2.12.0",
+    "@parcel/source-map": "^2.1.1",
+    "@parcel/utils": "^2.12.0"
+  }
 }
