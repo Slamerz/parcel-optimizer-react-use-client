@@ -16,6 +16,9 @@ jobs:
         with:
           node-version: '20'  # Specify your Node.js version
           registry-url: 'https://registry.npmjs.org/'
+      
+      - name: Enable Corepack
+        run: corepack enable
 
       - name: Install dependencies
         run: yarn install  # Or npm install
