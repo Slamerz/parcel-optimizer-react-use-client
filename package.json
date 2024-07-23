@@ -1,0 +1,9 @@
+{
+  "name": "parcel-optimizer-react-use-client",
+  "version": "0.0.1",
+  "description": "Parcel optimizer plugin to allow use client directives in React Components",
+  "main": "index.js",
+  "repository": "https://github.com/Slamerz/parcel-optimizer-react-use-client.git",
+  "author": "Jacob Walker <jacobdawalker@gmail.com>",
+  "license": "GPL-3.0-or-later"
+}
